@@ -1,0 +1,28 @@
+{
+  "name": "vue-prefix-loader",
+  "version": "1.0.0",
+  "description": "Automatic loader vue-components by they prefixes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HeadMad/vue-prefix-loader.git"
+  },
+  "keywords": [
+    "vue",
+    "components",
+    "autoloader",
+    "vue-automato"
+  ],
+  "author": "HeadMad",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HeadMad/vue-prefix-loader/issues"
+  },
+  "homepage": "https://github.com/HeadMad/vue-prefix-loader#readme",
+  "devDependencies": {
+    "vue-automato": "github:headmad/vue-automato"
+  }
+}
