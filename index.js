@@ -1,8 +1,5 @@
-const VueAutomato = require('мгу-automato')
+const VueAutomato = require('vue-automato')
 const { camelize, capitalize, hyphenate } = require('vue-automato/util')
-const checkComponent = require('./lib/checkComponent.js/index.js')
-
-
 
 module.exports = function (prefixes) {
   return new VueAutomato({
