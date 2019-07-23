@@ -11,7 +11,7 @@ module.exports = {
     plugins: [
       vuePrefixLoader({
         'l-': '@/lib/layout/',
-        'b-': '@/blocks/',
+        'b-': '@/lib/blocks/',
         'g-': require('./plugins/grid-loader.js')
       })
     ]
