@@ -3,8 +3,8 @@ const { camelize, capitalize, hyphenate } = require('vue-automato/util')
 
 module.exports = function (prefixes) {
   return new VueAutomato({
-    match ({tag: originalTag, ...node}, opts) {
-
+    match (node, opts) {
+      let originalTag = node.tag
       let kebabTag = hyphenate(originalTag)
       let camelTag = capitalize(camelize(originalTag))
 
