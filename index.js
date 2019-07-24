@@ -16,10 +16,11 @@ module.exports = function (prefixes) {
         opts.name = kebabTag.substring(prefix.length)
         opts.defaultHandler = require('./lib/default.js')
         
-        if (typeof prefixes[prefix] === "function")
-          return prefixes[prefix]({originalTag, kebabTag, camelTag}, opts, node)
+        const handler = typeof prefixes[prefix] === "function"
+          ? prefixes[prefix]
+          : opts.defaultHandler
         
-        return opts.defaultHandler({originalTag, kebabTag, camelTag}, opts, node)
+        return handler({originalTag, kebabTag, camelTag}, opts, node)
       }
     }
   })

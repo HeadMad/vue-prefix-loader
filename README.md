@@ -4,6 +4,7 @@ The plugin `vue-prefix-loader` allows you to specify the directory from which yo
 ```javascript
 // vue.config.js
 const vuePrefixLoader = require('vue-prefix-loader')
+const gridLoader = require('./plugins/grid-loader.js')
 
 
 module.exports = {
@@ -12,7 +13,7 @@ module.exports = {
       vuePrefixLoader({
         'l-': '@/lib/layout/',
         'b-': '@/lib/blocks/',
-        'g-': require('./plugins/grid-loader.js')
+        'g-': gridLoader
       })
     ]
   }
@@ -34,12 +35,13 @@ module.exports = function(
   {originalTag, kebabTag, camelTag},
   {rootPath, parentPath, prefixes, prefix, name, defaultHandler},
   node) {
-    let name = kebabTag.substring(2)
+
     let from = `@/lib/grids/${name}.vue`
     return {
-      from: from,
-      comp: camelTag
+      comp: camelTag,
+      from: from
     }
+
 }
 ```
 
