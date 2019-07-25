@@ -23,6 +23,8 @@
   },
   "homepage": "https://github.com/HeadMad/vue-prefix-loader#readme",
   "devDependencies": {
-    "vue-automato": "github:headmad/vue-automato"
+    "vue-automato": "github:headmad/vue-automato",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.37.0"
   }
 }
