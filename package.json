@@ -22,8 +22,10 @@
     "url": "https://github.com/HeadMad/vue-prefix-loader/issues"
   },
   "homepage": "https://github.com/HeadMad/vue-prefix-loader#readme",
+  "dependencies": {
+    "vue-automato": "github:headmad/vue-automato"
+  },
   "devDependencies": {
-    "vue-automato": "github:headmad/vue-automato",
     "vue-template-compiler": "^2.6.10",
     "webpack": "^4.37.0"
   }
