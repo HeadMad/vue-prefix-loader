@@ -6,7 +6,6 @@ The plugin `vue-prefix-loader` allows you to specify the directory from which yo
 const vuePrefixLoader = require('vue-prefix-loader')
 const gridLoader = require('./plugins/grid-loader.js')
 
-
 module.exports = {
   configureWebpack: {
     plugins: [
